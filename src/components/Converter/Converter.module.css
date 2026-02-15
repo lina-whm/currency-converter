@@ -1,0 +1,215 @@
+.converter {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .inputGroup {
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+.inputWrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .inputWrapper {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+.inputWrapper label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.input, .select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.swapButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .swapButton {
+    margin: 0;
+  }
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  text-align: center;
+}
+
+.resultText {
+  display: block;
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.resultValue {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--accent-color);
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .resultText {
+    margin-bottom: 0;
+  }
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.error {
+  color: #ff4444;
+}
+
+.chartSection {
+  background-color: var(--bg-secondary);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+}
+
+.chartTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.chartControls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.timeButton {
+  padding: 10px 30px;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.timeButton.active {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+@media (max-width: 480px) {
+  .converter {
+    padding: 10px;
+  }
+  
+  .card, .chartSection {
+    padding: 15px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input, .select {
+    padding: 10px 12px;
+  }
+  
+  .swapButton {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .resultValue {
+    font-size: 24px;
+  }
+  
+  .timeButton {
+    min-width: 100px;
+    padding: 8px 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .converter {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .converter {
+    padding: 40px;
+  }
+  
+  .card, .chartSection {
+    padding: 35px;
+  }
+}

@@ -3,22 +3,18 @@
   "name": "Конвертер валют",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "/currency-converter/icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "/currency-converter/icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/currency-converter",
   "display": "standalone",
   "theme_color": "#646cff",
-  "background_color": "#ffffff",
-  "orientation": "portrait",
-  "categories": ["finance", "utilities"]
+  "background_color": "#ffffff"
 }

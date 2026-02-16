@@ -1,14 +1,13 @@
-import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { Converter } from './components/Converter/Converter';
-import { Layout } from './components/Layout/Layout';
 
 function App() {
   return (
     <ThemeProvider>
-      <Layout>
+      <BrowserRouter basename="/currency-converter">
         <Converter />
-      </Layout>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

@@ -1,35 +1,53 @@
-# Конвертер валют
+#  Конвертер валют
 
-Современное PWA-приложение для конвертации валют с графиками, темной темой и адаптивным дизайном.
+  ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+  ![PWA](https://img.shields.io/badge/PWA-✓-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
+  ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-✓-222222?style=for-the-badge&logo=githubpages&logoColor=white)
+  
+  <h3>Современный конвертер валют с графиками и темной темой</h3>
+  
+  [Демо](https://lina-whm.github.io/currency-converter/) • 
+  [Репозиторий](https://github.com/lina-whm/currency-converter) • 
+    
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![React](https://img.shields.io/badge/React-18.2.0-61dafb)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178c6)
-![PWA](https://img.shields.io/badge/PWA-ready-green)
+---
 
-## Возможности
+## **Возможности**
 
-- Конвертация валют в реальном времени
-- Графики изменения курсов за неделю/месяц
-- Поддержка темной и светлой темы
-- Полностью адаптивный дизайн
-- Сохранение последних выбранных валют в localStorage
-- PWA - установка на телефон как приложение
-- Полностью на русском языке
-- Безопасное хранение API ключа
+|  **Конвертация** | Актуальные курсы 160+ валют |
+|  **Графики** | Изменения за неделю и месяц |
+|  **Темная тема** | Автоматическое сохранение выбора |
+|  **Адаптивность** | Отлично выглядит на всех устройствах |
+|  **LocalStorage** | Сохранение последних выбранных валют |
+|  **PWA** | Можно установить как приложение |
 
-## Технологии
+---
 
-- **React 18** - библиотека для интерфейса
-- **TypeScript** - типизация
-- **Recharts** - графики
-- **CSS Modules** - стилизация
-- **Context API** - управление состоянием (тема)
-- **LocalStorage** - сохранение настроек
-- **PWA** - прогрессивное веб-приложение
+## **Технологии**
 
-## Демо
+  | **Frontend** | React 19, TypeScript, CSS Modules |
+  | **Графики** | Recharts |
+  | **API** | ExchangeRate-API |
+  | **Деплой** | GitHub Pages |
+  | **PWA** | Service Worker, Manifest |
+  | **API** | ключ получи на exchangerate-api.com (бесплатно) |
+---
 
-[Скоро будет ссылка на деплой]
+## **Запуск локально**
 
-## Установка и запуск
+```bash
+# Клонировать репозиторий
+git clone https://github.com/lina-whm/currency-converter.git
+
+# Перейти в папку проекта
+cd currency-converter
+
+# Установить зависимости
+npm install
+
+# Создать .env файл с API ключом
+echo "REACT_APP_EXCHANGE_RATE_API_KEY=ваш_ключ" > .env
+
+# Запустить
+npm start

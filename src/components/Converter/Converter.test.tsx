@@ -3,23 +3,28 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Converter } from './Converter';
 import { ThemeProvider } from '../../context/ThemeContext';
+import { useCurrency } from '../../hooks/useCurrency';
 
 jest.mock('../../hooks/useCurrency', () => ({
-  useCurrency: () => ({
-    fromCurrency: 'USD',
-    setFromCurrency: jest.fn(),
-    toCurrency: 'EUR',
-    setToCurrency: jest.fn(),
-    amount: 1,
-    setAmount: jest.fn(),
-    result: 0.85,
-    loading: false,
-    error: null,
-    swapCurrencies: jest.fn()
-  })
+  useCurrency: jest.fn()
 }));
 
 describe('Конвертер валют', () => {
+  beforeEach(() => {
+    (useCurrency as jest.Mock).mockReturnValue({
+      fromCurrency: 'USD',
+      setFromCurrency: jest.fn(),
+      toCurrency: 'EUR',
+      setToCurrency: jest.fn(),
+      amount: 1,
+      setAmount: jest.fn(),
+      result: 0.85,
+      loading: false,
+      error: null,
+      swapCurrencies: jest.fn()
+    });
+  });
+
   test('отображает заголовок конвертера', () => {
     render(
       <ThemeProvider>

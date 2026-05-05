@@ -7,7 +7,7 @@
 [![API](https://img.shields.io/badge/API-ExchangeRate--API-orange)](https://www.exchangerate-api.com/)
 [![Responsive](https://img.shields.io/badge/Responsive-✅-green)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 
-Современное PWA-приложение для конвертации валют с **реальными курсами**, интерактивными графиками и темной темой. Полностью на русском языке
+Современное PWA-приложение для конвертации валют с **реальными курсами**, интерактивными графиками и темной темой
 
 ##  Ключевые особенности
 
